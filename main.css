@@ -1,0 +1,419 @@
+
+/*#####################
+  Global Features Start
+  ######################*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    font-family: 'Roboto', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: rgb(192, 191, 191);
+}
+
+
+body{
+  width: 100%; 
+  height: 100%;
+  background: url(./images/backgroundDesign.png) no-repeat center fixed;
+  background-size: cover;
+}
+
+@media screen and (max-width:1000px){
+
+    body{
+      background: url(./images/backgroundDesign3.png) no-repeat center fixed;
+    background-size: cover;
+    z-index: -1;
+    }
+      }
+    
+
+
+p{
+    font-size:1.2rem;
+    font-weight: 300;
+}
+
+
+img{
+    width: 100%;
+}
+/*#####################
+  Global Features End
+  ######################*/
+
+
+
+
+
+
+/*#####################
+  Nar bar Start
+  ######################*/
+  
+  nav 
+  {
+    height: 12vh;
+    background-color:rgba(232,74,95,1);
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+  }
+  /* nav 
+  {
+    height: 12vh;
+    background-color:#222;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+  }
+  */
+  
+.nav-link-bar{
+    list-style: none;
+    display: flex;
+    font-family: sans-serif;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+ }
+
+ .nav-link-bar :hover,
+ .nav-link-bar:focus{
+    background: linear-gradient(to top,  rgba(232,74,95,1), #FECEA8);
+    /*rgba(232,74,95,1)*/
+    padding: 1rem;
+    width: auto;
+    height: auto;
+    border-radius: 1.32rem;
+    transition: all 0.4s ease-out;
+  
+ }
+ /* .nav-link-bar :hover,
+ .nav-link-bar:focus{
+    background: linear-gradient(to top,  #222, #FECEA8);
+    /*rgba(232,74,95,1)*//*
+    padding: 1rem;
+    width: auto;
+    height: auto;
+    border-radius: 1.32rem;
+    transition: all 0.4s ease-out;
+  
+ }*/
+
+ .nav-link-bar li a {
+     text-decoration: none;
+     color:#222;
+     font-weight: 900;
+     font-size: 20px;
+ }
+
+
+ /* Mobile Nar Bar Responsivenss */
+ @media screen and (max-width:1200px){
+
+    /* Nav ham burger animations */
+    .line-bar{
+        width: 30px;
+        height: 5px;
+        background:#222;
+        margin: 5px;
+    }
+
+    nav {
+        position: relative;
+        box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+    }
+
+    /* positioning of the line bars */
+    .bar-nav{
+        position: absolute;
+        cursor: pointer;
+        right: 4%;
+        top : 50%;
+        transform: translate(-4%, -50%);
+        z-index: 2;
+
+    }
+
+    .nav-link-bar
+{
+    position: fixed;
+    background:rgba(232,74,95,1);
+  /*  height: 50%;
+    width: 50%; */
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -20%);
+    -webkit-clip-path: circle(100px at 90% -20%);
+    transition: all 0.8s ease-out;
+    z-index: 1;
+
+}
+
+/* Inter action With JavaScript When Bar is Clicked */
+.nav-link-bar.open{
+    clip-path: circle(750px at 90% -10%);
+    -webkit-clip-path: circle(750px at 90% -10%);
+}
+
+
+    
+ }
+
+  /*#####################
+  Nar bar ENd
+  ######################*/
+
+
+
+
+
+  /*#####################
+  First Section Start
+  ######################*/
+  .landning-page-text{
+
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  height: 88vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  }
+
+  /* Header Color */
+  .color-text-heading{
+
+    color:rgba(232,74,95,1);
+    margin: .4rem;
+
+  }
+
+  p.job-title{
+    text-align: center;
+    font-style: italic;
+    margin-top: 1rem;
+    font-size: 30px;
+    color:rgba(232,74,95,1);
+  }
+
+ @media screen and (max-width: 1000px){
+    span.job-title-text-change{
+        color: rgb(192, 191, 191);
+
+    }  
+ }
+
+/*#####################
+  First Section End
+######################*/
+
+
+
+/*#####################
+  About Section Start
+######################*/
+.about .container-about{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.about-heading{
+  font-size: 3rem;
+  text-align: center;
+  opacity: 0.4;
+ 
+}
+
+.profile-img{
+  flex:1;
+  margin-right: 4rem;
+}
+
+.text-info-about{
+  flex: 1;
+}
+.text-info-about p{
+  margin-left: 1rem;
+}
+@media screen and (max-width:400px ){
+
+}
+
+/*#####################
+  About Section End
+######################*/
+
+
+
+
+
+
+/*#####################
+  Services Section Start
+######################*/
+.services {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 120rem;
+  margin-top: 12rem;
+}
+
+.services-heading h1{
+  font-size: 3.5rem;
+  text-align: center;
+  opacity: 0.4;
+  position: relative;
+  margin-bottom: 1.2rem;
+}
+
+/* Line Animation start*/
+.services-heading h1::before,
+.services-heading h1::after{
+  content: '';
+  position: absolute;
+  bottom: -0.3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+
+}
+
+.services-heading h1::before{
+  width: 5.7rem;
+  height: 2px;
+  border-radius: 1px;
+}
+/* Line Animation end*/
+
+
+
+/*skills section */
+.specific-skill{
+  display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 2.6rem;
+}
+
+
+.specific-skill h1{
+  letter-spacing: 2px;
+  margin: 1.2rem -2px 1.2rem 0;
+}
+
+.skill-icon-container{
+  width: 7rem;
+  height: 7rem;
+  border: 3px solid #444;
+  border-radius: 33px;
+  background: #444;
+  background: rgba(232,74,95,1);
+  display: flex;
+  transform: rotate(45deg);
+  margin-bottom: 1.4rem;
+}
+
+.skill-icon-container i{
+  color: #444;
+  font-size: 3.5rem;
+  margin: auto; 
+  transform: rotate(-45deg);
+}
+
+
+
+
+
+.grid-container-skills{
+margin-top: 7rem;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+grid-gap: 2.5rem;
+text-align: center;
+}
+/*#####################
+ Services Section End
+######################*/
+
+
+
+/*#####################
+Projects Start Section
+######################*/
+
+.projects{
+width: 90%;
+height: 100%;
+margin: 0 auto;
+max-width: 120rem;
+margin-top: 10rem;
+}
+
+
+.projects-heading h1{
+  font-size: 3.5rem;
+  text-align: center;
+  opacity: 0.4;
+  position: relative;
+  margin-bottom: 1.2rem;  
+}
+
+/* Animation Line Start */
+
+.projects-heading h1::before, 
+.projects-heading h1::after{
+  content: '';
+  position: absolute;
+  bottom: -0.3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+}
+
+.projects-heading h1::before{
+  width: 7.1rem;
+  height: 2px;
+  border-radius: 1px;
+}
+
+/* Line Animation End */
+
+.portfolio-project{
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 3.4rem;
+margin-top: 7rem;
+}
+
+
+.portfolio-project:last-child{
+  margin-bottom: 0;
+}
+
+
+
+.portfolio-image{
+flex: 1;
+}
+
+.project-detials{
+  flex: 1;
+}
+
+
+
+/*#####################
+Projects End Section
+######################*/

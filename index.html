@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Dante Lentsoe Second Attempt</title>
+    <title>Dante Lentsoe Portfolio</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,7 +11,7 @@
   </head>
 
   <header>
-    <nav>
+    <nav id="nav-bar">
         <div class="bar-nav" onClick="narBar();">
             <!-- Line Drawings-->
         <div class="line-bar"></div>
@@ -32,7 +32,7 @@
       <!-- END of Navigation Bar -->
 </header>
 
-<section>
+<section id="home">
     <div class="landning-page-text">
         <h1><span class="color-text-heading">Dante</span> Lentsoe</h1>
         <br> 
@@ -47,7 +47,9 @@
     <div class="container-about">
 
         <div class="profile-img">
-<img src="./images/tech-page.png" alt="Dante's Image Coding">
+<img src="./images/Dante_Lentsoe_Coding.jpg" alt="Dante's Image Coding" class="about-img-edit">
+
+<div class="over-lay-img"></div>
         </div>
 
         <div class="text-info-about">
@@ -156,37 +158,33 @@
         </div>
 
         <div class="portfolio-project">
-            <div class="portfolio-image">
-                <img src="./images/" alt="Dante's Quote Machine Project">
+            <div class="portfolio-image project-alignment-right">
+                <a href="https://codepen.io/dante_lentsoe/full/YzqgOJv" target="blank_" class="project-link"> <img src="./images/Dantes-Quote-Machine.png" alt="Dante's Quote Machine Project"></a>
             </div>
-            <div class="project-detials">
+            <div class="project-detials project-alignment-right">
                 <h1>Dantes Thoughts</h1>
                 <h6>Quote Web Application, Technologies used: Vallina JavaScript, CSS3, HTML5</h6>
                 <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Earum, dolores ducimus, perspiciatis incidunt placeat cumque eius quod eum molestiae praesentium ratione reiciendis,
-                    impedit vero fugit est amet adipisci tempore aliquid.
+                    The Quote Machine uses arrays, that are randomly displayed to the screen 
+                    when "next quote" button is clicked. Users may also pass tweets to twitter, this was achieved
+                    using Twitter's API and HTTP request.
                 </p>
-                <a href="#" class="project-link"></a>
             </div>
            
         </div>
 
 <!--Project 2-->
         <div class="portfolio-project">
-            <div class="project-detials">
+            <div class="project-detials project-alignment-right">
                 <h1>Dev-Inspire</h1>
                 <h6>Website Application Template Generator, Technologies used: SASS, Vallina JavaScript, CSS3, HTML5</h6>
                 <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Earum, dolores ducimus, perspiciatis incidunt placeat cumque eius quod eum molestiae praesentium ratione reiciendis,
-                    impedit vero fugit est amet adipisci tempore aliquid.
+                    Dev-Inspire is a web application template designer, that generates random colors 
+                    and allows users to toggle between different fonts, navigation bar designs, and background color designs.
                 </p>
-               
-                <a href="#" class="project-link"></a>
             </div>
-            <div class="portfolio-image">
-                <img src="./images/Dantes-Quote-Machine.png" alt="Dante's Quote Machine Project">
+            <div class="portfolio-image project-alignment-right">
+                <a href="https://codepen.io/dante_lentsoe/full/yLJyNOK" target="blank_" class="project-link"> <img src="./images/Dantes-Dev-Inspire.png" alt="Dante's Quote Machine Project"></a>
             </div>
             
            
@@ -195,18 +193,16 @@
 
 <!--Project 3-->
         <div class="portfolio-project">
-            <div class="portfolio-image">
-                <img src="./images/Dantes-Dev-Inspire.png" alt="Dante's Quote Machine Project">
+            <div class="portfolio-image project-alignment-right">
+                <a href="#" target="blank_" class="project-link"> <img src="./images/art_illustrations.png" alt="Dante's Quote Machine Project"></a>
             </div>
-            <div class="project-detials">
+            <div class="project-detials project-alignment-right">
                 <h1>Dantes Graphic Gallary</h1>
-                <h6>Art and Logo Design Illustrations, Technologies used: Adobe Illustrator, Adobe Photoshop, Figma</h6>
+                <h6>Art and Logo Design Illustrations, Technologies used: Adobe Illustrator, Adobe Photoshop, Figma and Bootstrap</h6>
                 <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Earum, dolores ducimus, perspiciatis incidunt placeat cumque eius quod eum molestiae praesentium ratione reiciendis,
-                    impedit vero fugit est amet adipisci tempore aliquid.
+                    Dantes Graphic Gallary is a web application containing illustrations of graphic works made
+                    by Dante Lentsoe.
                 </p>
-                <a href="#" class="project-link"></a>
             </div>
            
         </div>
@@ -214,18 +210,17 @@
 <!--Project 4-->
 
         <div class="portfolio-project">
-            <div class="project-detials">
+            <div class="project-detials project-alignment-right">
                 <h1>Escape From School</h1>
                 <h6>Game Development, Technologies used HTML5, CSS3, C#</h6>
                 <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Earum, dolores ducimus, perspiciatis incidunt placeat cumque eius quod eum molestiae praesentium ratione reiciendis,
-                    impedit vero fugit est amet adipisci tempore aliquid.
+                    Escape from school is a 2 Dimensional game independantly developed by Dante Lentsoe 
+                    using Unity Game Engine and C# programming language. With custom visuals and animations developed using Blender.
                 </p>
-                <a href="#" class="project-link"></a>
+                <a href="#" class="project-link">  <a href="#" class="project-link"></a>
             </div>
-            <div class="portfolio-image">
-                <img src="./images/Dantes-Quote-Machine.png" alt="Dante's Quote Machine Project">
+            <div class="portfolio-image project-alignment-right">
+                <a href="#" class="project-link"> <img src="./images/2d_platformer_game.jpg" alt="Dante's Quote Machine Project" style="max-height: 280px;"></a>
             </div>
         </div>
     </div>
@@ -234,31 +229,31 @@
 <!--Projects Section End-->
 
 
+
+
+<footer class="footer-style">
+<div class="scroll-button" id="home">
+    <i fa fa-button><a href="#scrolltop"></a></i>
+</div>
+<p style="margin-bottom: 1.1rem;">&copy; 2020 Dante Lentsoe</p>
 <!--Contact Me Start-->
 <section class="contact" id="contact">
     <div class="social-media-icon">
         <ul class="icon-lists">
             <li>
-                <a href="#" class="icon-link">
+                <a href="https://www.linkedin.com/in/dante-lentsoe-2b6566148/" target="blank_" class="icon-link">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="#" class="icon-link">
+                <a href="https://github.com/DanteLentsoe" target="blank_" class="icon-link">
                     <i class="fab fa-github"></i>
                 </a>
+            </a>
             </li>
 
         </ul>
     </div>
 </section>
 <!--Contact Me End-->
-
-
-
-<footer class="footer-style">
-<div class="scroll-button" id="scroll-button">
-    <i class="fab fa-github-square"></i>
-   <p>&copy; 2020 Dante Lentsoe</p>
-</div>
 </footer>
 
     <body>

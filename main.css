@@ -7,6 +7,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html{
@@ -32,14 +34,17 @@ body{
     }
       }
     
-
+a{
+  text-decoration: none;
+  color: #444;
+}
 
 p{
     font-size:1.2rem;
     font-weight: 300;
 }
 
-
+/*all image sizez */
 img{
     width: 100%;
 }
@@ -55,20 +60,24 @@ img{
 /*#####################
   Nar bar Start
   ######################*/
+
+  
   
   nav 
   {
     height: 12vh;
     background-color:rgba(232,74,95,1);
-    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+    box-shadow: 0 2px 2px 2px rgba(0,0,0,.2);
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
   }
-  /* nav 
-  {
-    height: 12vh;
-    background-color:#222;
-    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
-  }
-  */
+
   
 .nav-link-bar{
     list-style: none;
@@ -84,26 +93,15 @@ img{
  .nav-link-bar :hover,
  .nav-link-bar:focus{
     background: linear-gradient(to top,  rgba(232,74,95,1), #FECEA8);
-    /*rgba(232,74,95,1)*/
     padding: 1rem;
     width: auto;
     height: auto;
     border-radius: 1.32rem;
-    transition: all 0.4s ease-out;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
   
  }
- /* .nav-link-bar :hover,
- .nav-link-bar:focus{
-    background: linear-gradient(to top,  #222, #FECEA8);
-    /*rgba(232,74,95,1)*//*
-    padding: 1rem;
-    width: auto;
-    height: auto;
-    border-radius: 1.32rem;
-    transition: all 0.4s ease-out;
-  
- }*/
-
+ 
  .nav-link-bar li a {
      text-decoration: none;
      color:#222;
@@ -124,8 +122,9 @@ img{
     }
 
     nav {
-        position: relative;
+        position: fixed;
         box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+       
     }
 
     /* positioning of the line bars */
@@ -181,7 +180,7 @@ img{
   display: flex;
   flex-direction: column;
   font-size: 30px;
-  height: 88vh;
+  height: 100vh;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -220,6 +219,7 @@ img{
   About Section Start
 ######################*/
 .about .container-about{
+  margin-top: 12rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -238,13 +238,86 @@ img{
   margin-right: 4rem;
 }
 
+.about-img-edit{
+  border: 5px solid rgba(232,74,95,1);
+  border-radius: 9%;
+  display: block;
+  max-height: 420px;
+  max-width: 400px;
+  margin-left: 4rem;
+}
+/*
+.over-lay-img{
+  position: absolute;
+  width:100%;
+  height: 100%;
+  background-color:#000;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0.8;
+  padding: 20px;
+ 
+}
+.profile-img .over-lay-img{
+ opacity: 1;
+}*/
+
+
 .text-info-about{
   flex: 1;
 }
 .text-info-about p{
   margin-left: 1rem;
 }
-@media screen and (max-width:400px ){
+@media screen and (max-width:750px ){
+
+.about-heading h1{
+  font-size: 3rem;
+  text-align: center;
+  opacity: 0.9;
+   
+}
+
+.text-info-about p{
+  margin: 0 2rem;
+
+}
+
+.skill-icon-container{
+  width: 3rem;
+  height: 3rem;
+}
+
+.skill-icon-container i{
+  font-size: 4rem;
+}
+.container-about{
+  display: grid;
+  flex-direction: column;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+grid-gap: 2.5rem;
+text-align: center;
+justify-content: center;
+}
+
+.container-about img{
+  margin-top: 3rem;
+width: 400px;
+align-items: center;
+justify-content: center;
+margin-left: 10%;
+transform: translateX(10%);
+}
+}
+
+
+@media screen and (max-width: 600px){
+  .container-about img{
+margin: 0 0 7rem 0;
+  }
+
+  .container-about{
+    flex-direction: column;
+  }
 
 }
 
@@ -341,6 +414,7 @@ display: grid;
 grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 grid-gap: 2.5rem;
 text-align: center;
+justify-content: center;
 }
 /*#####################
  Services Section End
@@ -364,6 +438,7 @@ margin-top: 10rem;
 .projects-heading h1{
   font-size: 3.5rem;
   text-align: center;
+  justify-content: center;
   opacity: 0.4;
   position: relative;
   margin-bottom: 1.2rem;  
@@ -406,14 +481,153 @@ margin-top: 7rem;
 
 .portfolio-image{
 flex: 1;
+box-shadow: 12px 12px 12px 12px rgba(0,0,0,.2);
 }
 
 .project-detials{
   flex: 1;
 }
 
+.project-detials h6{
+  font-size: 1.2rem;
+  opacity: 0.7;
+}
 
+.project-detials h1{
+  font-size: 2rem;
+  opacity: 0.7;
+  text-align: center;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+}
+
+
+.project-alignment-right{
+margin-right: 5rem;
+}
+
+
+@media screen and (max-width: 600px){
+  .portfolio-project{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .portfolio-image{
+    margin: 0 0 2rem 0;
+  }
+  .scroll-button{
+    right: 2.8rem;
+  }
+}
+
+
+
+@media screen and (max-width: 628px){
+  .portfolio-project{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .portfolio-image{
+    margin: 0 0 2rem 0;
+    order: 2;
+  }
+
+  .project-detials{
+    margin: 0;
+    order: 1;
+  }
+  .project-detials h1{
+    text-align: center;
+  }
+}
 
 /*#####################
 Projects End Section
+######################*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*#####################
+Footer Start Section
+######################*/
+.footer-style{
+  position: relative;
+  width: 100%;
+  text-align: center;
+  height: 7rem;
+  padding: 2rem 0;
+  margin-top: 3rem;
+  background: rgba(232,74,95,1);
+  color: #222;
+}
+
+
+.footer-style p{
+  font-size: 1.2rem;
+  font-weight: 300px;
+}
+
+
+.scroll-button{
+position: absolute;
+width: 3rem;
+height: 3rem;
+background: #444;
+right: 3rem;
+border-radius: 100%;
+top: -1.3rem;
+display: flex;
+animation: pulse 1s infinite;
+}
+
+.scroll-button i{
+  color: #2267;
+  font-size: 1.4rem;
+  margin: auto;
+}
+
+.scroll-button:hover{
+  cursor: pointer;
+  font-size: 6rem;
+  width: 2.7rem;
+height: 2.7rem;
+background: #222;
+color: #222;
+}
+
+.icon-link{
+font-size: 1.5rem;
+}
+/* Animations for pulse effect of button*/
+@keyframes pulse{
+0%{
+  box-shadow: 0 0 0 0 rgba(232,74,95,0.87);
+
+}
+
+50%{
+  box-shadow: 0 0 0 1.1rem rgba(232,74,95,0.50);
+}
+
+75%{
+  box-shadow: 0 0 0 1.79rem rgba(232,74,95,0);
+}
+100%{
+  box-shadow: 0 0 0 2.5 rgba(232,74,95,0);
+}
+}
+
+/*#####################
+Footer Start Section
 ######################*/
